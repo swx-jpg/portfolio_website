@@ -8,22 +8,19 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
-        <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:314-343-3432">314-343-3432</LinkItem>
-        </LinkColumn>
+        
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:contact@jsmastery.com">
-            contact@jsmastery.com
+          <LinkItem href="mailto:info@amzdealfinder.org">
+          info@amzdealfinder.org
           </LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
+          <Slogan>Amazon Disclosure:<small>As an Amazon Associate I earn from qualifying purchases.</small></Slogan>
         </CompanyContainer>
-        <SocialContainer>
+        {/* <SocialContainer>
           <SocialIcons href="https://google.com">
             <AiFillGithub size="3rem" />
           </SocialIcons>
@@ -33,7 +30,7 @@ const Footer = () => {
           <SocialIcons href="https://google.com">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
-        </SocialContainer>
+        </SocialContainer> */}
       </SocialIconsContainer>
     </FooterWrapper>
   );

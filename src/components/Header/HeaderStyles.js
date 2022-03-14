@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 2rem;
+  padding: 0rem;
+  padding-top: 0rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -18,12 +18,13 @@ export const Container = styled.div`
   }
 `;
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 ;
   display: flex;
   flex-direction: row;
   align-content: center;
+  justify-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 ;
   }
 `;
 export const Div2 = styled.div`

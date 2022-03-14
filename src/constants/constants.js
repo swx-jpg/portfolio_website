@@ -44,3 +44,30 @@ export const TimeLineData = [
   { year: 2020, text: 'Shared my projects with the world', },
   { year: 2021, text: 'Started my own platform', },
 ];
+
+export const categoryOptions =
+[
+  {value: "https://www.amazon.com/s", label: "United States"},
+  {value: "https://www.amazon.ca/s", label: "Canada"},
+  {value: "https://www.amazon.com.mx/s", label: "Mexico"},
+  {value: "https://www.amazon.co.uk/s", label: "United Kindom"},
+  {value: "https://www.amazon.de/s", label: "Germany"},
+  {value: "https://www.amazon.fr/s", label: "France"},
+  {value: "https://www.amazon.it/s", label: "Italy"},
+  {value: "https://www.amazon.es/s", label: "Spain"},
+  {value: "https://www.amazon.com.br/s", label: "Brazil"},
+  {value: "https://www.amazon.in/s", label: "India"},
+  {value: "https://www.amazon.cn/s", label: "China"},
+  {value: "https://www.amazon.co.jp/s", label: "Japan"},
+];
+
+export const sortByOption =[
+  {value: "relevance-rank", label:"Sort by"},
+  {value: "featured-rank", label:"Featured"},
+  {value: "price-asc-rank", label:"Price: Low to High"},
+  {value: "price-desk-rank", label:"Price: High to Low"},
+  {value: "review-rank", label:"Avg. Customer Review"},
+  {value: "date-desc-rank", label:"Newest Arrivals"},
+  
+
+];
