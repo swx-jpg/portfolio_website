@@ -97,7 +97,11 @@ function SendDataToUrl( event, searchTerm, country, minPrice, maxPrice, sortBy, 
   // }
 
   
-  alert( urlString);
+  
+  const openUrl =  (ev) =>{ 
+    ev.preventDefault();
+    window.open(urlString,"_blank");
+  }
   return urlString;
   
   
@@ -184,8 +188,8 @@ return  (
     <div className="centerBtn">
       {/* <Button onClick={(e)=>(window.open(SendDataToUrl(e ,searchTerm, country, minPrice, maxPrice, sortBy, primeOnly, freeShipping),"__blank"))}  >Search</Button> */}
       
-      <Button onClick={(e)=>(window.open("www.google.com","__blank"))}  >Search</Button>
-      
+      <Button onClick={(ev)=>(ev ,openUrl(SendDataToUrl(e ,searchTerm, country, minPrice, maxPrice, sortBy, primeOnly, freeShipping) ))}>Search</Button>
+      {/* <a target="_blank" href={(e)=>(SendDataToUrl(e ,searchTerm, country, minPrice, maxPrice, sortBy, primeOnly, freeShipping))}>Search</a> */}
       {/* <Button onClick={console.log( searchTerm + country + minPrice + maxPrice + sortBy + primeOnly + freeShipping)}  >Search</Button> */}
     </div>
   </Form>
